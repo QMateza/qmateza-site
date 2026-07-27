@@ -1,0 +1,40 @@
+/* Qunda Mateza — Colour tokens
+   Usage ratio: ~60% Paper/White, ~30% Ink, ~10% Blue + Amber combined.
+   Amber is a seasoning — a dot, an underline, a single highlight per view. */
+
+:root {
+  /* --- Base palette --- */
+  --color-ink: #16263A;        /* Primary brand colour, headings, dark surfaces */
+  --color-ink-80: #3A4A5C;     /* Softer ink for fills/borders on dark */
+  --color-blue: #2D6CB8;       /* Links, primary buttons, interactive */
+  --color-blue-hover: #245A9C; /* Primary button / link hover */
+  --color-blue-tint: #E6F0FA;  /* Badge fills, subtle blue surfaces */
+  --color-amber: #E9A23B;      /* Accent only — the human touch, logo dot */
+  --color-amber-dark: #B97A1C; /* Amber text on light backgrounds (contrast) */
+  --color-amber-tint: #FBEFD8; /* Badge fills, subtle amber surfaces */
+  --color-slate: #5F6B78;      /* Secondary text, captions, muted UI */
+  --color-paper: #F7F5F1;      /* Page background, light surfaces */
+  --color-white: #FFFFFF;      /* Cards, inputs */
+  --color-border: rgba(22, 38, 58, 0.12); /* Hairline borders */
+  --color-whatsapp: #25D366;   /* The WhatsApp CTA only */
+  --color-whatsapp-hover: #1FB855;
+
+  /* --- Semantic aliases --- */
+  --text-heading: var(--color-ink);
+  --text-body: var(--color-ink);
+  --text-muted: var(--color-slate);
+  --text-on-dark: var(--color-white);
+  --text-link: var(--color-blue);
+  --text-link-hover: var(--color-blue-hover);
+
+  --surface-page: var(--color-paper);
+  --surface-card: var(--color-white);
+  --surface-dark: var(--color-ink);
+  --surface-blue: var(--color-blue);
+
+  --border-default: var(--color-border);
+  --focus-ring: var(--color-blue);
+
+  --accent: var(--color-amber);
+  --accent-text: var(--color-amber-dark);
+}

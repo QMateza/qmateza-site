@@ -1,0 +1,1256 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qunda Mateza — Web Developer & AI Automation, Johannesburg</title>
+    <meta
+      name="description"
+      content="I build modern websites and smart automation for South African small businesses. WhatsApp-first, plain language, built to last."
+    />
+    <link rel="canonical" href="https://qmateza.co.za/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Hanken+Grotesk:wght@400;500&family=Spline+Sans+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#0E1824" />
+    <link rel="icon" href="assets/img/loho_color.png" />
+    <link rel="icon" href="assets/img/loho_color.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Qunda Mateza — Web Developer &amp; AI Automation, Johannesburg"
+    />
+    <meta
+      property="og:description"
+      content="I build modern websites and smart automation for South African small businesses. WhatsApp-first, plain language, built to last."
+    />
+    <meta property="og:url" content="https://qmateza.co.za/" />
+    <meta
+      property="og:image"
+      content="https://qmateza.co.za/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./support.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <x-dc>
+      <!-- ── NAV ── -->
+      <nav class="nav" data-screen-label="Nav" aria-label="Primary navigation">
+        <div class="wrap nav-in">
+          <a class="logo" href="#top" aria-label="Qunda Mateza home">
+            <svg
+              class="logo-tile"
+              viewBox="0 0 1000 1000"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect
+                x="72"
+                y="72"
+                width="856"
+                height="856"
+                rx="122.6"
+                fill="var(--surface-hi)"
+              />
+              <g
+                transform="translate(500,500) scale(0.82) translate(-500,-500)"
+              >
+                <text
+                  x="139.5"
+                  y="633.9"
+                  font-family="'Bricolage Grotesque',system-ui,sans-serif"
+                  font-weight="600"
+                  font-size="463.75"
+                  fill="#F7F5F1"
+                >
+                  Q
+                </text>
+                <text
+                  x="445.7"
+                  y="630.5"
+                  font-family="'Bricolage Grotesque',system-ui,sans-serif"
+                  font-weight="600"
+                  font-size="448.94"
+                  fill="#F7F5F1"
+                >
+                  M
+                </text>
+              </g>
+              <circle cx="787.4" cy="237.4" r="40.6" fill="#E9A23B" />
+            </svg>
+            <span class="logo-words"
+              ><span class="lw-b">Qunda</span
+              ><span class="lw-r">Mateza</span></span
+            >
+          </a>
+          <div class="navlinks">
+            <a class="navlink" data-navlink="work" href="#work">Work</a>
+            <a class="navlink" data-navlink="services" href="#services"
+              >Services</a
+            >
+            <a class="navlink" data-navlink="how-it-works" href="#how-it-works"
+              >How it works</a
+            >
+            <a class="navlink" data-navlink="contact" href="#contact"
+              >Contact</a
+            >
+          </div>
+          <div class="nav-right">
+            <a
+              class="btn btn-wa btn-wa-sm"
+              href="https://wa.me/27780635353?text=Hi%20Qunda%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20chat%20about%20my%20business."
+              aria-label="Message Qunda Mateza on WhatsApp"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="15"
+                height="15"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.8-.9 1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"
+                />
+                <path
+                  d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.3 8.3 0 1112 20.3z"
+                />
+              </svg>
+              Message me
+            </a>
+            <button
+              class="hamb"
+              onClick="{{ toggle }}"
+              aria-label="Toggle menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+        <div class="navdrop {{ menuStateClass }}">
+          <a href="#work" onClick="{{ close }}">Work</a>
+          <a href="#services" onClick="{{ close }}">Services</a>
+          <a href="#how-it-works" onClick="{{ close }}">How it works</a>
+          <a href="#contact" onClick="{{ close }}">Contact</a>
+        </div>
+      </nav>
+
+      <!-- ── HERO ── -->
+      <main id="main">
+        <section class="hero" id="top" data-screen-label="Hero">
+          <div class="hero-bg" aria-hidden="true">
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+          </div>
+          <div class="wrap">
+            <div class="hero-inner">
+              <div class="hero-tag hero-enter">
+                <span class="hero-tag-dot"></span>
+                Johannesburg, South Africa
+              </div>
+              <h1 class="hero-enter">
+                Your business should work for you
+                <span class="am">around the clock.</span>
+              </h1>
+              <p class="lead hero-enter">
+                I build modern websites and smart tools that answer enquiries,
+                book appointments, and chase invoices — so you can focus on the
+                work you're actually good at.
+              </p>
+              <div class="cta-row hero-enter">
+                <a
+                  class="btn btn-wa"
+                  href="https://wa.me/27780635353?text=Hi%20Qunda%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20chat%20about%20my%20business."
+                  aria-label="Message Qunda Mateza on WhatsApp"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.8-.9 1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"
+                    />
+                    <path
+                      d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.3 8.3 0 1112 20.3z"
+                    />
+                  </svg>
+                  Message me on WhatsApp
+                </a>
+                <a class="btn btn-ghost" href="#work">See my work</a>
+              </div>
+            </div>
+
+            <!-- WhatsApp conversation demo -->
+            <div
+              class="wa-mock-wrap hero-visual"
+              aria-label="Example WhatsApp automation conversation"
+              role="img"
+            >
+              <div class="wa-mock">
+                <div class="wa-mock-header">
+                  <div class="wa-avatar">QM</div>
+                  <div class="wa-hdr-text">
+                    <span class="wa-name">Qunda Mateza</span>
+                    <span class="wa-hdr-status"
+                      >Business · usually replies in minutes</span
+                    >
+                  </div>
+                </div>
+                <div class="wa-mock-body" id="wa-body">
+                  <div class="wa-day-label">TODAY</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PROOF BAR ── -->
+        <section
+          class="proof-sec stagger"
+          data-screen-label="Stats"
+          aria-label="Key statistics"
+        >
+          <div class="wrap">
+            <div class="proof-bar">
+              <div class="proof-item">
+                <strong class="proof-num">15+</strong>
+                <span>sites delivered</span>
+              </div>
+              <div class="proof-item">
+                <strong class="proof-num">2 wks</strong>
+                <span>avg turnaround</span>
+              </div>
+              <div class="proof-item">
+                <strong class="proof-num">24/7</strong>
+                <span>automation</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PAIN POINTS ── -->
+        <section class="pain sec fade-up" data-screen-label="Pain points">
+          <div class="wrap">
+            <span class="eyebrow">Does this sound familiar?</span>
+            <h2 class="h-sec">
+              Running the business IS the job — until the admin takes over.
+            </h2>
+            <div class="pain-grid stagger">
+              <div class="pain-item">
+                <svg
+                  class="pain-icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <p>
+                  Customers message after hours and you miss them — by the time
+                  you reply, they've moved on to someone else.
+                </p>
+              </div>
+              <div class="pain-item">
+                <svg
+                  class="pain-icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+                <p>
+                  No website — or one that looks outdated — so people can't tell
+                  if you're still in business.
+                </p>
+              </div>
+              <div class="pain-item">
+                <svg
+                  class="pain-icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+                <p>
+                  Chasing invoices and following up on quotes eats the hours you
+                  should spend doing actual work.
+                </p>
+              </div>
+              <div class="pain-item">
+                <svg
+                  class="pain-icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                <p>
+                  You know you need to fix this — but between client work and
+                  life, there's never the right moment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── TECH STACK ── -->
+        <section class="stack fade-up" data-screen-label="Tech stack">
+          <div class="wrap">
+            <span class="stack-label">Built with tools that last</span>
+            <div class="stack-chips stagger">
+              <span class="stack-chip">Next.js</span>
+              <span class="stack-chip">React</span>
+              <span class="stack-chip">Tailwind CSS</span>
+              <span class="stack-chip">Vercel</span>
+              <span class="stack-chip">Supabase</span>
+              <span class="stack-chip">WhatsApp Business API</span>
+              <span class="stack-chip">n8n</span>
+              <span class="stack-chip">Google Analytics</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── WORK ── -->
+        <section
+          class="work sec fade-up"
+          id="work"
+          data-screen-label="Recent work"
+        >
+          <div class="wrap">
+            <span class="eyebrow">Recent work</span>
+            <h2 class="h-sec">Sites I've built for real businesses.</h2>
+            <div class="work-grid stagger">
+              <div class="work-card">
+                <div class="thumb">
+                  <img
+                    src="assets/img/eagle-financial-services.jpg"
+                    alt="Eagle Financial Services website screenshot"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="work-body">
+                  <h3>Eagle Financial Services</h3>
+                  <p class="work-type">Finance · Lending</p>
+                  <p class="work-out">
+                    Short-term loan site with a live repayment calculator.
+                    Applications handled fully online.
+                  </p>
+                  <a
+                    class="work-link"
+                    href="https://eaglefinancialservices.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View live site →</a
+                  >
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="thumb">
+                  <img
+                    src="assets/img/dj-star-a.jpg"
+                    alt="DJ Star A portfolio website screenshot"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="work-body">
+                  <h3>DJ Star A</h3>
+                  <p class="work-type">Entertainment · Music</p>
+                  <p class="work-out">
+                    Portfolio and booking site for an Afro Deep House DJ. Music
+                    player, gallery, and direct booking flow.
+                  </p>
+                  <a
+                    class="work-link"
+                    href="https://stara-sigma.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View live site →</a
+                  >
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="thumb">
+                  <img
+                    src="assets/img/voltverse-technologies.jpg"
+                    alt="VoltVerse Technologies website screenshot"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="work-body">
+                  <h3>VoltVerse Technologies</h3>
+                  <p class="work-type">Engineering · Water Systems</p>
+                  <p class="work-out">
+                    Service showcase for a water infrastructure company.
+                    Technical audit enquiries captured online.
+                  </p>
+                  <a
+                    class="work-link"
+                    href="https://voltverse-one.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View live site →</a
+                  >
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="thumb">
+                  <img
+                    src="assets/img/gulamu-business-enterprise.jpg"
+                    alt="Gulamu Business Enterprise website screenshot"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="work-body">
+                  <h3>Gulamu Business Enterprise</h3>
+                  <p class="work-type">Industrial · Supply</p>
+                  <p class="work-out">
+                    Water pipe specialists site with a full service breakdown
+                    and instant quote request flow.
+                  </p>
+                  <a
+                    class="work-link"
+                    href="https://gulamu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View live site →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SERVICES ── -->
+        <section
+          class="services sec fade-up"
+          id="services"
+          data-screen-label="Services"
+        >
+          <div class="wrap">
+            <span class="eyebrow">Services</span>
+            <h2 class="h-sec">Pick what your business needs right now.</h2>
+            <div class="svc-grid stagger">
+              <div class="card">
+                <h3>Landing page</h3>
+                <p class="price">from R1 999</p>
+                <p class="card-desc">
+                  A single, focused page to get a new business online fast and
+                  looking credible.
+                </p>
+                <ul class="incl">
+                  <li>1 page</li>
+                  <li>Contact form</li>
+                  <li>WhatsApp button</li>
+                  <li>Basic SEO</li>
+                  <li>Mobile-optimised</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Starter website</h3>
+                <p class="price">from R3 999</p>
+                <p class="card-desc">
+                  A professional, mobile-ready website that tells your story and
+                  gets customers to contact you.
+                </p>
+                <ul class="incl">
+                  <li>Up to 5 pages</li>
+                  <li>Contact form</li>
+                  <li>Google Maps embed</li>
+                  <li>WhatsApp button</li>
+                  <li>On-page SEO</li>
+                  <li>Mobile-optimised</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Business website</h3>
+                <p class="price">from R9 999</p>
+                <p class="card-desc">
+                  A full business site with SEO foundations, a blog, and the
+                  tools customers expect from a credible local business.
+                </p>
+                <ul class="incl">
+                  <li>Up to 10 pages</li>
+                  <li>On-page SEO</li>
+                  <li>Blog / news section</li>
+                  <li>Google Business Profile setup</li>
+                  <li>Analytics</li>
+                </ul>
+              </div>
+              <div class="card featured">
+                <span class="badge">Most popular</span>
+                <h3>Website + smart automation</h3>
+                <p class="price">from R19 999</p>
+                <p class="card-desc">
+                  A complete online system — your website, plus AI-powered tools
+                  that handle the admin so you don't have to.
+                </p>
+                <ul class="incl">
+                  <li>Everything in Business website</li>
+                  <li>WhatsApp automation</li>
+                  <li>Appointment booking</li>
+                  <li>Invoice reminders</li>
+                  <li>Lead qualification</li>
+                  <li>Monthly care retainer</li>
+                </ul>
+              </div>
+            </div>
+            <p class="svc-note">
+              All prices exclude VAT. Automation add-ons from R3 000, monthly
+              care options from R500/mo. Message me to discuss your specific
+              needs.
+            </p>
+          </div>
+        </section>
+
+        <!-- ── HOW IT WORKS ── -->
+        <section
+          class="process sec fade-up"
+          id="how-it-works"
+          data-screen-label="How it works"
+        >
+          <div class="wrap">
+            <span class="eyebrow">How it works</span>
+            <h2 class="h-sec">
+              From invisible to unstoppable, in three steps.
+            </h2>
+            <div class="steps stagger">
+              <div class="step">
+                <div class="step-num">01</div>
+                <h3>Get found online</h3>
+                <p>
+                  A clean, fast website that works on every phone. Customers
+                  find you, understand what you do, and reach you, before they
+                  move on to someone else.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-num">02</div>
+                <h3>Stop losing leads</h3>
+                <p>
+                  Automated WhatsApp replies, a booking link, and an enquiry
+                  form that actually converts. No more missed messages while
+                  you're on the job.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-num">03</div>
+                <h3>Run while you sleep</h3>
+                <p>
+                  A smart assistant that handles routine questions, sends
+                  invoice reminders, and qualifies leads 24/7, in plain language
+                  your customers understand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── FIND MY WORK ── -->
+        <section
+          class="findwork sec fade-up"
+          id="findwork"
+          aria-labelledby="findwork-h"
+        >
+          <div class="wrap">
+            <div class="findwork-inner">
+              <div class="findwork-main">
+                <svg
+                  class="findwork-gh-mark"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+                <h2 class="findwork-h" id="findwork-h">
+                  Browse the code,<br />not just the screenshots.
+                </h2>
+                <p class="findwork-desc">
+                  Every site I build has a GitHub repository. Check the
+                  implementation yourself before getting in touch — no pitch
+                  needed.
+                </p>
+                <a
+                  class="findwork-gh-link"
+                  href="https://github.com/QMateza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Qunda Mateza on GitHub"
+                >
+                  <span>↳ github.com/QMateza</span>
+                  <svg
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="2" y1="8" x2="14" y2="8" />
+                    <polyline points="9 3 14 8 9 13" />
+                  </svg>
+                </a>
+              </div>
+              <div class="findwork-also">
+                <a
+                  class="findwork-social"
+                  href="https://www.linkedin.com/in/qunda-mateza-19a36a57/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                  <span class="findwork-social-label">
+                    <b>LinkedIn</b>
+                    <small>Qunda Mateza</small>
+                  </span>
+                </a>
+                <a
+                  class="findwork-social"
+                  href="https://www.instagram.com/codingwithq/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="@codingwithq on Instagram"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    />
+                  </svg>
+                  <span class="findwork-social-label">
+                    <b>Instagram</b>
+                    <small>@codingwithq</small>
+                  </span>
+                </a>
+                <a
+                  class="findwork-social"
+                  href="https://www.facebook.com/qmateza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on Facebook"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                  <span class="findwork-social-label">
+                    <b>Facebook</b>
+                    <small>qmateza</small>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── TESTIMONIALS ── -->
+        <section class="testi sec fade-up" data-screen-label="Testimonials">
+          <div class="wrap">
+            <span class="eyebrow">What clients say</span>
+            <h2 class="h-sec">Don't take my word for it.</h2>
+            <div class="testi-grid stagger">
+              <div class="card testi-card">
+                <p class="quote">
+                  Qunda built our site in two weeks and didn't make us feel
+                  stupid once. Now customers find us on Google and book directly
+                  from the website.
+                </p>
+                <div class="attrib">
+                  <span class="avatar">AB</span>
+                  <span
+                    ><b>[Client name]</b
+                    ><small>[Business type, city]</small></span
+                  >
+                </div>
+              </div>
+              <div class="card testi-card">
+                <p class="quote">
+                  The WhatsApp automation handles about 30 enquiries a week for
+                  us. I didn't know anything like that was possible for a small
+                  business like ours.
+                </p>
+                <div class="attrib">
+                  <span class="avatar">CD</span>
+                  <span
+                    ><b>[Client name]</b
+                    ><small>[Business type, city]</small></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── FAQ ── -->
+        <section class="faq sec fade-up" data-screen-label="FAQ">
+          <div class="wrap">
+            <span class="eyebrow">Common questions</span>
+            <h2 class="h-sec">Things people ask before they message me.</h2>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button
+                  class="faq-q"
+                  id="faq-q-1"
+                  aria-expanded="false"
+                  aria-controls="faq-a-1"
+                >
+                  Do I need to know anything about tech?
+                  <i class="faq-icon" aria-hidden="true">+</i>
+                </button>
+                <div
+                  class="faq-a"
+                  id="faq-a-1"
+                  role="region"
+                  aria-labelledby="faq-q-1"
+                >
+                  <p class="faq-a-inner">
+                    Not a thing. I handle everything — design, build, setup,
+                    launch. I explain what I'm doing in plain language at every
+                    step. If you can send a WhatsApp message, we can work
+                    together.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-q"
+                  id="faq-q-2"
+                  aria-expanded="false"
+                  aria-controls="faq-a-2"
+                >
+                  How long does it take to launch?
+                  <i class="faq-icon" aria-hidden="true">+</i>
+                </button>
+                <div
+                  class="faq-a"
+                  id="faq-a-2"
+                  role="region"
+                  aria-labelledby="faq-q-2"
+                >
+                  <p class="faq-a-inner">
+                    A starter website is typically live within 10–14 days of us
+                    agreeing on the content and design direction. Automation
+                    setups run in parallel and go live shortly after. I'll give
+                    you a clear timeline before we start.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-q"
+                  id="faq-q-3"
+                  aria-expanded="false"
+                  aria-controls="faq-a-3"
+                >
+                  What if I'm not happy with the result?
+                  <i class="faq-icon" aria-hidden="true">+</i>
+                </button>
+                <div
+                  class="faq-a"
+                  id="faq-a-3"
+                  role="region"
+                  aria-labelledby="faq-q-3"
+                >
+                  <p class="faq-a-inner">
+                    We agree on the design direction upfront, and I share
+                    progress regularly so there are no surprises. You get
+                    revision rounds built into every project. I don't consider
+                    the job done until you're genuinely happy with it.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-q"
+                  id="faq-q-4"
+                  aria-expanded="false"
+                  aria-controls="faq-a-4"
+                >
+                  Can I update the content myself after launch?
+                  <i class="faq-icon" aria-hidden="true">+</i>
+                </button>
+                <div
+                  class="faq-a"
+                  id="faq-a-4"
+                  role="region"
+                  aria-labelledby="faq-q-4"
+                >
+                  <p class="faq-a-inner">
+                    Yes. I build sites so you can update text, images, and
+                    prices without touching code. I'll show you how before
+                    handing over. And if you'd rather not deal with it, my
+                    monthly care retainer covers all updates for you.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-q"
+                  id="faq-q-5"
+                  aria-expanded="false"
+                  aria-controls="faq-a-5"
+                >
+                  What happens if something breaks after launch?
+                  <i class="faq-icon" aria-hidden="true">+</i>
+                </button>
+                <div
+                  class="faq-a"
+                  id="faq-a-5"
+                  role="region"
+                  aria-labelledby="faq-q-5"
+                >
+                  <p class="faq-a-inner">
+                    All projects include a post-launch support window. After
+                    that, the monthly care retainer keeps everything running and
+                    monitored. Either way, you can always reach me on WhatsApp —
+                    I pick up.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="cta" id="contact" data-screen-label="Get started">
+          <div class="wrap">
+            <span class="eyebrow">Get started today</span>
+            <h2>
+              No tech knowledge needed.<br />Just tell me about your business.
+            </h2>
+            <p class="lead">
+              I'll reply on WhatsApp within a few hours. We'll talk through what
+              you need, what it'll cost, and whether it makes sense — no
+              pressure, no jargon.
+            </p>
+            <div class="cta-row">
+              <a
+                class="btn btn-wa btn-lg"
+                href="https://wa.me/27780635353?text=Hi%20Qunda%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20chat%20about%20my%20business."
+                aria-label="Message Qunda Mateza on WhatsApp"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.8-.9 1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"
+                  />
+                  <path
+                    d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.3 8.3 0 1112 20.3z"
+                  />
+                </svg>
+                Message me on WhatsApp
+              </a>
+              <a
+                class="btn btn-ghost btn-lg"
+                href="mailto:hello@qmateza.co.za"
+                >Or send an email</a
+              >
+            </div>
+            <p class="cta-foot">
+              +27 73 018 9279 · hello@qmateza.co.za · Johannesburg, South
+              Africa
+            </p>
+          </div>
+        </section>
+      </main>
+      <!-- ── FOOTER ── -->
+      <footer class="footer" data-screen-label="Footer">
+        <div class="wrap">
+          <div class="foot-grid">
+            <div>
+              <a
+                class="logo logo-lg"
+                href="#top"
+                aria-label="Qunda Mateza home"
+              >
+                <svg
+                  class="logo-tile"
+                  viewBox="0 0 1000 1000"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    x="72"
+                    y="72"
+                    width="856"
+                    height="856"
+                    rx="122.6"
+                    fill="var(--surface-hi)"
+                  />
+                  <g
+                    transform="translate(500,500) scale(0.82) translate(-500,-500)"
+                  >
+                    <text
+                      x="139.5"
+                      y="633.9"
+                      font-family="'Bricolage Grotesque',system-ui,sans-serif"
+                      font-weight="600"
+                      font-size="463.75"
+                      fill="#F7F5F1"
+                    >
+                      Q
+                    </text>
+                    <text
+                      x="445.7"
+                      y="630.5"
+                      font-family="'Bricolage Grotesque',system-ui,sans-serif"
+                      font-weight="600"
+                      font-size="448.94"
+                      fill="#F7F5F1"
+                    >
+                      M
+                    </text>
+                  </g>
+                  <circle cx="787.4" cy="237.4" r="40.6" fill="#E9A23B" />
+                </svg>
+                <span class="logo-words"
+                  ><span class="lw-b">Qunda</span
+                  ><span class="lw-r">Mateza</span></span
+                >
+              </a>
+              <p class="foot-desc">Web Developer & AI Automation</p>
+              <p class="foot-tag">Built local. Built to last.</p>
+              <div class="foot-social">
+                <a
+                  class="foot-social-link"
+                  href="https://www.facebook.com/qmateza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on Facebook"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="foot-social-link"
+                  href="https://www.instagram.com/codingwithq/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on Instagram"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="foot-social-link"
+                  href="https://www.linkedin.com/in/qunda-mateza-19a36a57/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="foot-social-link"
+                  href="https://github.com/QMateza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Qunda Mateza on GitHub"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <span class="foot-label">Pages</span>
+              <a class="foot-link" href="#work">Work</a>
+              <a class="foot-link" href="#services">Services</a>
+              <a class="foot-link" href="#how-it-works">How it works</a>
+              <a class="foot-link" href="#contact">Contact</a>
+            </div>
+            <div>
+              <span class="foot-label">Get in touch</span>
+              <p class="foot-info">+27 73 018 9279</p>
+              <p class="foot-info">hello@qmateza.co.za</p>
+              <p class="foot-info">Johannesburg, South Africa</p>
+            </div>
+          </div>
+          <hr class="foot-div" />
+          <div class="foot-bottom">
+            <span class="foot-copy"
+              >© <span id="foot-year"></span> Qunda Mateza. All rights
+              reserved.</span
+            >
+            <span class="foot-built"
+              >Built with HTML, CSS &amp; a bit of AI.</span
+            >
+          </div>
+        </div>
+      </footer>
+
+      <!-- ── FLOATING WHATSAPP ── -->
+      <a
+        class="wa-float"
+        href="https://wa.me/27780635353?text=Hi%20Qunda%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20chat%20about%20my%20business."
+        aria-label="Chat with Qunda on WhatsApp"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="28"
+          height="28"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.8-.9 1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"
+          />
+          <path
+            d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.3 8.3 0 1112 20.3z"
+          />
+        </svg>
+      </a>
+    </x-dc>
+
+    <script type="text/x-dc" data-dc-script>
+      class Component extends DCLogic {
+        state = { menuOpen: false };
+        toggle = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+        close  = () => this.setState({ menuOpen: false });
+
+        componentDidMount() {
+          // Gate animation CSS behind JS
+          document.documentElement.classList.add('js');
+
+          // ── Hero entrance orchestration ──
+          const heroEnterEls = [...document.querySelectorAll('.hero-enter')];
+          const heroVisual = document.querySelector('.hero-visual');
+          requestAnimationFrame(() => {
+            heroEnterEls.forEach((el, i) => {
+              el.style.transitionDelay = (80 + i * 90) + 'ms';
+              el.classList.add('is-visible');
+            });
+            if (heroVisual) setTimeout(() => heroVisual.classList.add('is-visible'), 360);
+          });
+
+          // ── WhatsApp conversation demo ──
+          const msgs = [
+            { text: 'Hi, do you build websites for small businesses?', dir: 'in', time: '10:14' },
+            { text: 'Hi Thandi 👋 Yes — sites, WhatsApp automation, the works. What does your business do?', dir: 'out', time: '10:14' },
+            { text: 'I run a hair salon in Soweto. Clients always message at odd hours 😅', dir: 'in', time: '10:15' },
+            { text: "That's exactly what I fix. A booking system that handles enquiries automatically — 24/7, no missed clients.", dir: 'out', time: '10:15' },
+            { text: 'How much does something like that cost?', dir: 'in', time: '10:16' },
+            { text: 'From R3 999, live in 2 weeks. Want to see an example? 👇', dir: 'out', time: '10:16' },
+          ];
+          const delays = [600, 1700, 2900, 3900, 5100, 6000];
+          let waStarted = false;
+          function startWaDemo(waEl) {
+            if (waStarted) return;
+            waStarted = true;
+            msgs.forEach(({ text, dir, time }, i) => {
+              setTimeout(() => {
+                const bubble = document.createElement('div');
+                bubble.className = 'wa-bubble wa-bubble--' + (dir === 'in' ? 'in' : 'out');
+                const p = document.createElement('p');
+                p.textContent = text;
+                const ts = document.createElement('span');
+                ts.className = 'wa-time';
+                ts.textContent = time;
+                bubble.appendChild(p);
+                bubble.appendChild(ts);
+                bubble.style.cssText = 'opacity:0;transform:translateY(10px) scale(0.96)';
+                waEl.appendChild(bubble);
+                requestAnimationFrame(() => requestAnimationFrame(() => {
+                  bubble.style.cssText = 'transition:opacity .45s cubic-bezier(.16,1,.3,1),transform .45s cubic-bezier(.16,1,.3,1);opacity:1;transform:none';
+                }));
+                waEl.scrollTop = waEl.scrollHeight;
+              }, delays[i]);
+            });
+          }
+          const waWrap = document.querySelector('.wa-mock-wrap');
+          const waEl = document.getElementById('wa-body');
+          if (waWrap && waEl) {
+            const waObs = new IntersectionObserver(es => {
+              if (es[0].isIntersecting) { startWaDemo(waEl); waObs.disconnect(); }
+            }, { threshold: 0.3 });
+            waObs.observe(waWrap);
+          }
+
+          // ── Nav active state ──
+          const links = [...document.querySelectorAll('[data-navlink]')];
+          const map = {};
+          links.forEach(l => { map[l.getAttribute('data-navlink')] = l; });
+          const navObs = new IntersectionObserver(es => {
+            es.forEach(e => {
+              if (e.isIntersecting) {
+                links.forEach(l => l.classList.remove('active'));
+                const a = map[e.target.id];
+                if (a) a.classList.add('active');
+              } else {
+                const a = map[e.target.id];
+                if (a) a.classList.remove('active');
+              }
+            });
+          }, { rootMargin: '-45% 0px -50% 0px' });
+          ['work','services','how-it-works','contact'].forEach(id => {
+            const s = document.getElementById(id);
+            if (s) navObs.observe(s);
+          });
+
+          // ── Scroll reveal animations ──
+          const animObs = new IntersectionObserver(es => {
+            es.forEach(e => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-visible');
+                animObs.unobserve(e.target);
+              }
+            });
+          }, { threshold: 0.08, rootMargin: '0px 0px -48px 0px' });
+          document.querySelectorAll('.fade-up, .stagger').forEach(el => animObs.observe(el));
+
+          const footYear = document.getElementById("foot-year"); if (footYear) footYear.textContent = new Date().getFullYear();
+          // ── FAQ accordion ──
+          document.querySelectorAll('.faq-q').forEach(btn => {
+            btn.addEventListener('click', () => {
+              const item = btn.closest('.faq-item');
+              const isOpen = item.classList.contains('open');
+              document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('open');
+                i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+              });
+              if (!isOpen) {
+                item.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+              }
+            });
+          });
+        }
+
+        renderVals() {
+          return {
+            menuStateClass: this.state.menuOpen ? 'open' : '',
+            toggle: this.toggle,
+            close:  this.close,
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

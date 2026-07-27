@@ -1,0 +1,31 @@
+/* Qunda Mateza — Spacing, radius & layout tokens
+   Spacing scale is a strict 4px base unit. Use these values only. */
+
+:root {
+  /* --- Spacing (4px base) --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* --- Radius --- */
+  --radius-sm: 6px;    /* inputs, badges */
+  --radius-md: 8px;    /* buttons, cards */
+  --radius-lg: 12px;   /* large cards, panels */
+  --radius-tile: 16px; /* logo tile */
+  --radius-pill: 999px;
+
+  /* --- Layout --- */
+  --max-width: 1120px;
+  --gutter: 24px;
+
+  /* --- Breakpoints (reference; use in media queries) --- */
+  --bp-mobile: 640px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+}

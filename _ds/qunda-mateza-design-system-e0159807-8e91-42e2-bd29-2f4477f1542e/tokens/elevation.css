@@ -1,0 +1,18 @@
+/* Qunda Mateza — Elevation & motion tokens
+   The brand favours flat surfaces with hairline borders over drop shadows.
+   Shadows here are reserved for floating UI only (dialogs, toasts, dropdowns). */
+
+:root {
+  /* --- Shadows (used sparingly — cards use borders, not shadows) --- */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(22, 38, 58, 0.06);
+  --shadow-float: 0 8px 24px rgba(22, 38, 58, 0.12);
+  --shadow-ring: 0 0 0 2px var(--color-blue); /* input focus ring */
+
+  /* --- Motion --- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --duration-fast: 120ms; /* @kind other */
+  --duration-base: 180ms; /* @kind other */
+  --duration-slow: 280ms; /* @kind other */
+}
